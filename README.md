@@ -8,4 +8,5 @@ A pseudo multi-threaded bash script to parallel encode .wav to .mp3 via lame. Us
 ## Better options
 There are better, more elegant options to accomplish this task, for example, using GNU parallel.  I wrote this script a while ago as a proof of concept before I discovered parallel.  Hope someone finds it useful.
 
+Here is an example doing what this script does using GNU parallel:
 `find /path/to/wavs -name '*.wav' | parallel lame -V 2 {}`
